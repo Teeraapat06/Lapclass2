@@ -44,5 +44,25 @@ foreach($age as $x => $x_value){
 	echo "<br>\n";
 }
 ?>
+<h1> การใช้ Array 2 มิติ (Two Dimensional Arrays)</h1>
+<?php
+$cars = array(
+	array("Volvo",22,18),
+	array("BMW",15,13,30,75),
+	array("Saab",5,2),
+	array("Land Rover",17,15,180)
+);
+
+$rows = count($cars);
+for($row = 0; $row < $rows; $row++){
+    echo "<p><b>Row number $row</b></p>";
+    echo "<ul>";
+    $cols = count($cars[$row]);
+    for($col = 0; $col < $cols; $col++){
+        echo "<li>" . $cars[$row][$col] . "</li>";
+    }
+    echo "</ul>";
+}
+?>
 </body>
 </html>
