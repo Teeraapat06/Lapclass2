@@ -5,6 +5,7 @@
     <title>PHP GET</title>
 </head>
 <body>
+    <h1>PHP GET</h1>
     <form method="get" action="<?php echo $_SERVER['PHP_SELF'];?>">
         Name: <input type="text" name="fname" required>
         Last Name: <input type="text" name="lname" required>
