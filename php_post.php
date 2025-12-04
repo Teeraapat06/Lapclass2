@@ -5,6 +5,7 @@
     <title>PHP POST</title>
 </head>
 <body>
+    <h1>PHP POST</h1>
     <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
         Name: <input type="text" name="fname" required>
         Last Name: <input type="text" name="lname" required>
