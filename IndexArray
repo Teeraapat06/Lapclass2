@@ -27,5 +27,22 @@ for($x = 0; $x < $arrlen; $x++){
     echo "<br>\n";
 }
 ?>
+<h1> การใช้ Foreach กับ Index Arrays </h1>
+<?php
+$fruits = array("แอบเปิ้ล","มะละกอ", "กล้วย","ส้ม","องุ่น","มังคุด","ทุเรียน");
+foreach($fruits as $value){
+	echo $value;
+	echo "<br>\n";
+}
+?>
+<h1> การใช้ Foreach กับ Associative Arrays </h1>
+<?php
+$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43", "Bas"=>"19");
+
+foreach($age as $x => $x_value){
+    echo $x . " มีอายุ " . $x_value . " ปี";
+	echo "<br>\n";
+}
+?>
 </body>
 </html>
